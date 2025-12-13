@@ -1,0 +1,5 @@
+{
+  "comment": "This file is not used. Deploy backend and frontend separately:",
+  "backend": "Deploy from ./backend folder",
+  "frontend": "Deploy from ./frontend folder"
+}

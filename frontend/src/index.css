@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+/* Hero Background Animations */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(-40px, 30px) rotate(120deg);
+  }
+  66% {
+    transform: translate(20px, -40px) rotate(240deg);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, 40px) scale(1.2);
+  }
+  50% {
+    transform: translate(-30px, -20px) scale(0.8);
+  }
+  75% {
+    transform: translate(20px, -30px) scale(1.1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Gradient Animation */
+.hero-gradient-animation {
+  background: linear-gradient(
+    -45deg,
+    #ec4899,
+    #db2777,
+    #9333ea,
+    #7c3aed,
+    #c026d3,
+    #d946ef
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Float Animations */
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 15s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 10s ease-in-out infinite;
+}
+
+/* Shimmer Text Animation */
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+}
+
+/* Fade In Up Animation */
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+/* Category Card Animations */
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.grid > * {
+  animation: fade-in-scale 0.5s ease-out forwards;
+  opacity: 0;
+}

@@ -1,0 +1,9 @@
+node_modules/
+
+.DS_Store
+*.log
+uploads/
+dist/
+build/
+coverage/
+.vscode/

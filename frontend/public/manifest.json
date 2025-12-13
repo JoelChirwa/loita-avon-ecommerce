@@ -1,0 +1,11 @@
+{
+  "name": "Loita Shop",
+  "short_name": "Loita Shop",
+  "description": "Authentic Avon products in Malawi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#db2777",
+  "orientation": "portrait-primary",
+  "icons": []
+}
