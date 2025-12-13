@@ -34,6 +34,7 @@ app.use(cors({
       'http://localhost:5173',
       'http://localhost:5174',
       'https://loita-avon-ecommerce.vercel.app',
+      'https://loitashop.vercel.app',
       process.env.FRONTEND_URL
     ].filter(Boolean);
 
